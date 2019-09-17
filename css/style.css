@@ -1,11 +1,11 @@
 /* initialisation */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 :root {
- --color1: #333333;
- --color2: #1E93CC;
- --color3: #eeeeee;
- --color4: #E99002;
- --color5:#165882;
+    --color1: #333333;
+    --color2: #1E93CC;
+    --color3: #eeeeee;
+    --color4: #E99002;
+    --color5:#165882;
 }
 *{
     margin:0;
