@@ -22,6 +22,9 @@ body {
 .bg-warning {
     background-color:var(--color4);
 }
+.bg-button {
+    background-color: var(--color5);
+}
  
 ul { width:100%;}
 li { list-style:none; float:left;}
@@ -36,9 +39,44 @@ a { text-decoration:none;}
     padding-left:120px;
     padding-right:80px;
 }
+
 #navigation  a {
     color:#fff;
     padding-left:30px;
+    text-transform: capitalize;
+    font-size:1.1em;
+}
+#navigation a:hover  {
+    animation: color-change 1s linear infinite;
+    -webkit-animation: color-change 5s linear infinite;
+    animation-fill-mode: both;
+    filter:blur(1px);
+    -webkit-filter:blur(1px);
+}
+@-webkit-keyframes color-change {
+    0% { color: orange; }
+    50% { color: red; }
+    100% { color: orange; }
+}
+@-moz-keyframes color-change {
+    0% { color: orange; }
+    50% { color: red; }
+    100% { color: orange; }
+}
+@-ms-keyframes color-change {
+    0% { color: orange; }
+    50% { color: red; }
+    100% { color: orange; }
+}
+@-o-keyframes color-change {
+    0% { color: orange; }
+    50% { color: red; }
+    100% { color: orange; }
+}
+@keyframes color-change {
+    0% { color: orange; }
+    50% { color: red; }
+    100% { color: orange; }
 }
 #navigation li:last-of-type {
     float:right;
@@ -49,7 +87,7 @@ a { text-decoration:none;}
     padding-right:5px;
 }
 button {
-    width:300px;
+    width:210px;
     height:65px;
     border:0;
     border-radius:10px;
@@ -57,12 +95,12 @@ button {
     -moz-border-radius:10px;
     -ms-border-radius:10px;
     -o-border-radius:10px;
-    font-size:1.5em;    
+    font-size:1.2em;    
     color:#fff;
 }
 button:hover {
-    filter:invert(100%);
-    -webkit-filter:invert(100%);
+    filter:saturate(500%);
+    -webkit-filter:saturate(500%);
 }
 /* jumbotron */
 .jumbo {
@@ -70,13 +108,17 @@ button:hover {
     height:43vh;
     display:flex;
     flex-grow: row nowrap;
+
     align-items: center;
     background-color:var(--color2);
     color:#fff;
 }
 .jumbo-img {
-    text-align:center;
-    width:40%;
+    padding-left:10vw;
+}
+.jumbo img {
+    width:100%;
+    height:auto;
 }
 .jumbo-txt {
     display : flex;
@@ -84,6 +126,7 @@ button:hover {
     align-items: center;
     line-height: 3em;
     flex-wrap: wrap;
+    padding-left:5vw;
 }
 .jumbo-txt h1 {
     font-size:4em;
@@ -96,7 +139,7 @@ button:hover {
     margin-top:20px;
     border: 2px solid #fff; 
 }
-.jumbo button::after {
+button::after {
     font-family: "Font Awesome 5 Free";
     content:"\f101";
     font-size:0.8em;
@@ -108,6 +151,8 @@ button:hover {
     display:flex;
     align-items: center;
     justify-content: center;
+    font-size:2em;
+    font-weight:300;
 }
 /* panel production */
 #product-list {
@@ -148,9 +193,52 @@ button:hover {
     justify-content: center;
     background-color:var(--color3);    
 }
+#sponsoring div {
+    width:90%;
+    text-align:center;
+}
 #sponsoring img {
-    max-width:5vw;
+    max-width:6vw;
     height:auto;
-    margin:0 20px;
+    margin:10px 50px;
     vertical-align:middle;
+}
+#sponsoring img:last-of-type {
+    max-width:11vw;
+}
+#bottom-buttons {
+    display:flex;
+    justify-content:center;
+    height:33vh;
+    padding-top:30px;
+}
+#bottom-buttons button {
+    margin:0 10px;
+    font-size:1.4em;
+}
+hr {
+    background-color:#dddddd;
+    height:5px;
+    border:0;
+}
+footer {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height:8.5vh;
+    background-color:var(--color1);
+    color:#fff;
+}
+footer  a {
+    padding:0 20px;
+    border-right:2px dotted #dddddd;
+    color:#fff;
+    font-weight:300;
+}
+footer li:last-of-type {
+    float:right;
+}
+#bottom-buttons button:not(.bg-warning){
+    text-transform: uppercase;
 }
