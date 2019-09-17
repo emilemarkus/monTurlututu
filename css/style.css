@@ -46,7 +46,7 @@ a { text-decoration:none;}
     text-transform: capitalize;
     font-size:1.1em;
 }
-#navigation a:hover  {
+#navigation a:hover, footer a:hover  {
     animation: color-change 1s linear infinite;
     -webkit-animation: color-change 5s linear infinite;
     animation-fill-mode: both;
