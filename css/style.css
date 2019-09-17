@@ -1,12 +1,6 @@
 /* initialisation */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
-:root {
-    --color1: #333333;
-    --color2: #1E93CC;
-    --color3: #eeeeee;
-    --color4: #E99002;
-    --color5:#165882;
-}
+
 *{
     margin:0;
     padding:0;
@@ -17,13 +11,13 @@ body {
     line-height: 1.2em;
 }
 .warning {
-    color:var(--color4);
+    color:#E99002;
 }
 .bg-warning {
-    background-color:var(--color4);
+    background-color:#E99002;
 }
 .bg-button {
-    background-color: var(--color5);
+    background-color: #165882;
 }
  
 ul { width:100%;}
@@ -32,7 +26,7 @@ a { text-decoration:none;}
 /* navigation */
 #navigation {
     height:45px;
-    background-color:var(--color1);
+    background-color:#333333;
     display:flex;
     flex-direction: row;
     align-items:center;
@@ -47,37 +41,9 @@ a { text-decoration:none;}
     font-size:1.1em;
 }
 #navigation a:hover, footer a:hover  {
-    animation: color-change 1s linear infinite;
-    -webkit-animation: color-change 5s linear infinite;
-    animation-fill-mode: both;
-    filter:blur(1px);
-    -webkit-filter:blur(1px);
+color:orange;
 }
-@-webkit-keyframes color-change {
-    0% { color: orange; }
-    50% { color: red; }
-    100% { color: orange; }
-}
-@-moz-keyframes color-change {
-    0% { color: orange; }
-    50% { color: red; }
-    100% { color: orange; }
-}
-@-ms-keyframes color-change {
-    0% { color: orange; }
-    50% { color: red; }
-    100% { color: orange; }
-}
-@-o-keyframes color-change {
-    0% { color: orange; }
-    50% { color: red; }
-    100% { color: orange; }
-}
-@keyframes color-change {
-    0% { color: orange; }
-    50% { color: red; }
-    100% { color: orange; }
-}
+
 #navigation li:last-of-type {
     float:right;
 }
@@ -108,9 +74,8 @@ button:hover {
     height:43vh;
     display:flex;
     flex-grow: row nowrap;
-
     align-items: center;
-    background-color:var(--color2);
+    background-color:#1E93CC;
     color:#fff;
 }
 .jumbo-img {
@@ -156,7 +121,7 @@ button::after {
 }
 /* panel production */
 #product-list {
-    background-color:var(--color2);
+    background-color:#1E93CC;
     display : flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -191,7 +156,7 @@ button::after {
     flex-grow: row wrap;
     align-items:center;
     justify-content: center;
-    background-color:var(--color3);    
+    background-color:#eeeeee;    
 }
 #sponsoring div {
     width:90%;
@@ -227,7 +192,7 @@ footer {
     flex-direction: row;
     align-items: center;
     height:8.5vh;
-    background-color:var(--color1);
+    background-color:#333333;
     color:#fff;
 }
 footer  a {
