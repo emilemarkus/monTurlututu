@@ -132,7 +132,7 @@ button::after {
     padding:20px 0;
     
 }
-#product-list section {
+#product-list div {
     width:34vw;
     margin:30px 10px;
     hyphens:none;
