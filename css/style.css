@@ -216,7 +216,7 @@ div.onTop {
     content: " ";
     white-space: pre;
     background:url('../img/notification.png');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     position:fixed;
     bottom:0;
