@@ -209,3 +209,21 @@ footer li:last-of-type {
 #bottom-buttons button:not(.bg-warning){
     text-transform: uppercase;
 }
+/* on top*/
+div.onTop {
+    height:60px;
+    width:60px;
+    content: " ";
+    white-space: pre;
+    background:url('../img/notification.png');
+    background-repeat: none;
+    background-size: cover;
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin: 10px;   
+}
+div.onTop:hover {
+    filter:saturate(1200%);
+    -webkit-filter:saturate(1200%);
+}
